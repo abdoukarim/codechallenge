@@ -164,7 +164,7 @@ class AdminHandler(tornado.web.RequestHandler):
         """
         words = yield get_top_words()
         urls = yield get_urls()
-        self.render("admin.html", words=words, urls=urls)
+        self.render("templates/admin.html", words=words, urls=urls)
 
 
 class MainHandler(tornado.web.RequestHandler):
@@ -206,7 +206,7 @@ class MainHandler(tornado.web.RequestHandler):
             "");"
             yield safe_create_table('urls', sql)
 
-        self.render("home.html", words=words)
+        self.render("templates/home.html", words=words)
 
     @staticmethod
     def word_records(words):
