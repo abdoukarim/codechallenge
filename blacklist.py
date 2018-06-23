@@ -31,4 +31,8 @@ blacklistwords = ['whose', 'became', 'nowhere', 'fifty', 'ten', 'did', 'mostly',
 
 
 def get_blacklist():
+    """
+    Return black listed words
+    :return: blacklistwords
+    """
     return blacklistwords
