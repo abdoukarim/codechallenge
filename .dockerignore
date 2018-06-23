@@ -1,0 +1,17 @@
+# Ignore git
+.git
+.gitignore
+
+# JetBrains IDE files
+.idea
+
+# Ignore docker
+Dockerfile
+.dockerignore
+
+# Ignore files for development
+.DS_Store
+__pycache__
+private.pem
+pub.pem
+

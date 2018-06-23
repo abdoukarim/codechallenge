@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+    <form action="" method="POST">
+        <label for="id_url">Enter a URL</label>
+        <input type="text" id="id_url" name="url">
+        <input type="submit" value="Go">
+    </form>
+    <div id="top">
+        <span>Top 100 words</span>
+        <ul>
+            {% for word in words %}
+                {% if word.get('word') %}
+                    <li><span style="font-size: {{ word['frequency'] }}">{{ word['word'] }}</span></li>
+                {% end %}
+            {% end %}
+        </ul>
+    </div>
+</body>
+</html>

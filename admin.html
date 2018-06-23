@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin</title>
+</head>
+<body>
+
+<table>
+    <th>Word</th>
+    <tbody>
+        {% for word in words %}
+            {% if word.get('word') %}
+                <tr>
+                    <td>{{ word['word'] }}</td>
+                </tr>
+            {% end %}
+        {% end %}
+
+    </tbody>
+</table>
+
+<table>
+    <th>Url</th>
+    <th>Sentiment</th>
+    <tbody>
+        {% for url in urls %}
+
+            <tr>
+                <td>{{ url['url'] }}</td>
+                <td>{{ url['sentiment'] }}</td>
+            </tr>
+
+        {% end %}
+    </tbody>
+</table>
+
+</body>
+</html>

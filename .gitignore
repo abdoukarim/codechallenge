@@ -1,0 +1,6 @@
+*.pyc
+.idea
+private.pem
+pub.pem
+.DS_Store
+__pycache__
