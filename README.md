@@ -13,6 +13,10 @@ After completing the installation, access the app by clicking the following link
 ## Note:
 > The app is not immediately available on port 8888 because the containers 
 > are still being initialized and may take a couple of minutes before the first load.
+> Make sure that ports 8888 and 8080 are accessible.
+
+# Access to db
+Explore the database with adminer http://localhost:8080 by using credentials of the file database.json
 
 # Best way to safely store and manage the keys
 To safely store and manage the keys, we can you use docker [vault](https://hub.docker.com/_/vault/)
