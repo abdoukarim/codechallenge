@@ -6,4 +6,4 @@ pycryptodome==3.6.3
 requests==2.19.1
 tornado==5.0.2
 Tornado-MySQL==0.5.1
-urllib3==1.23
+urllib3==1.24.2
